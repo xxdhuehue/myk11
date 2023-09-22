@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .content-auto {
+    content-visibility: hidden;
+  }
+}
+
+:root {
+  --primary-color: red;
+  --blur: 10px;
+}
+
+.k11_main-height {
+  margin-top: theme(height.70);
+  height: calc(100vh - theme(height.70))
+}
+
+.k11_hover {
+  @apply transition-colors transition ease-in-out hover:bg-amber-100 duration-500 cursor-pointer
+}
+
+.k11_vertical_center {
+  @apply flex flex-col justify-center items-center 
+}
+
+.k11_horizontal_center {
+  @apply flex justify-center items-center 
+}
+
+.k11_rounded_box {
+  @apply flex justify-center items-center border rounded-full border-black text-black cursor-pointer py-1 px-3 text-xs mb-3
+}
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
